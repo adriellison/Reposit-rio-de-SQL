@@ -3,13 +3,14 @@
 # O que é SQL?
 
 > SQL, ou Standard Query Language, é uma linguagem padrão declarativa utilizada para a manipulação de bancos de dados relacionais.
-O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos e escrever queries em bancos de dados.
+
+> O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos e escrever queries em bancos de dados.
 
 ## Para que serve esse documento?
 
 > Serve para ajudar você que ainda aprendeu os comandos SQL ou não sabe alguma funcionalidade do mesmo.
 
-## Comando básicos
+## Comandos básicos
 
 - **CREAT**
     Cria uma `TABLE`, `DATABASE`, `INDEX` ou `VIEW`.
@@ -68,22 +69,22 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 
 ## 📋 Exemplos de comandos
 
-#### Cria um banco de dados
+#### Criar um banco de dados
 ```sql
     CREAT DATABASE meuBanco;
 ```
 
-#### Mostra todos os bancos de dados
+#### Mostrar todos os bancos de dados
 ```sql
     SHOW DATABASES;
 ```
 
-#### Seleciona o banco de dados que queremos usar
+#### Selecionar o banco de dados que queremos usar
 ```sql
     USE meuBanco;
 ```
 
-#### Cria uma tabela 
+#### Criar uma tabela 
 ```sql
     CREAT TABLE teste (codigo int(5) PRIMARY KEY AUTOINCREMENT, nome(255));
 ```
@@ -91,7 +92,7 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 
 > _AUTOINCREMENT - O auto incremento permite criar um número automaticamente toda vez que um registro é inserido na tabela._
 
-#### Mostra todas as tabales do banco em uso
+#### Mostrar todas as tabales do banco em uso
 ```sql
     SHOW TABLES;
 ```
@@ -103,7 +104,7 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 
 > No exemplo, estamos adicionando a coluna `descricao` depois do `nome` na tabela `teste`.
 
-#### Insere valor na tabela
+#### Inserir valor na tabela
 ```sql
     INSERT INTO teste VALUES("Fernando", "Descrição aleatória até 255 caracteres");
 ```
@@ -114,7 +115,7 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 ```
 > Para inserção de valores específicos ou deixando algum campo em branco, é necessário descrever o nome da coluna e o valor a ser inserido.
 
-#### Seleciona todos os registros
+#### Selecionar todos os registros
 ```sql
     SELECT * FROM teste;
 ```
@@ -124,7 +125,7 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 ```
 > Seleciona todos os registro de apenas uma coluna
 
-#### Seleciona especificando o registro com WHERE
+#### Selecionar especificando o registro com WHERE
 ```sql
     SELECT * FROM teste WHERE id = 1;
 ```
@@ -135,7 +136,7 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 ```
 > Seleciona todos os nomes onde o `id` é maior ou igual a 1.
 
-#### Seleciona usando LIMIT 
+#### Selecionar registros usando LIMIT 
 ```sql
     SELECT * FROM teste LIMIT 5;
 ```
@@ -146,7 +147,7 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 ```
 > No segundo exemplo estamos retornando 5 registros, começando do índice 0(No caso, todos os 5 registros começando do `ID` 1 que é a `PK`, pois não temos o índice 0).
 
-#### Seleciona registros usando JOIN
+#### Selecionar registros usando JOIN
 
 **Usuarios:**
 | Usuario | Senha | Setor |
@@ -168,16 +169,15 @@ O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos 
 ```sql
     SELECT Usuario, Cargo FROM Usuarios JOIN Setores ON Usuarios.Setor = Setores.Setor WHERE Setores.Cargo = "RH";
 ```
-Na consulta acima queremos o nome dos `Usuários` e o `Cargo` de todos os que tiverem o `cargo` de `RH`.
+> Na consulta acima queremos o nome dos `Usuários` e o `Cargo` de todos os que tiverem o `cargo` de `RH`.
 
-#### Atualiza uma tabela
+#### Atualizar uma tabela
 ```sql
     UPDATE teste SET nome = "Alice" WHERE id = 2;
 ```
-
 > Vai trocar o nome de `Bruno` para `Alice`, pois o `ID` é referente ao segundo registro na tabela.
 
-#### Remove um registro da tabela
+#### Remover um registro da tabela
 ```sql
     DELETE FROM teste WHERE id = 2;
 ```
