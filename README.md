@@ -1,4 +1,4 @@
-![Logo](https://github.com/adriellison/Reposit-rio-de-SQL/blob/main/cover.png)
+![Logo](https://github.com/adriellison/Repositorio-de-SQL/blob/main/cover.png)
 
 # O que é SQL?
 
@@ -197,6 +197,6 @@
 
 [GitHub Adriellison](https://github.com/adriellison)
 
-[Repositorio do Documento de SQL](https://github.com/adriellison/Reposit-rio-de-SQL)
+[Repositorio do Documento de SQL](https://github.com/adriellison/Repositorio-de-SQL)
 
 [Convite para o servidor de estudos LAG](https://discord.gg/Z4RcfxtPYE)
