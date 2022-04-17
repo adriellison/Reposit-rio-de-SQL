@@ -4,12 +4,12 @@
 
 # O que é SQL?
 
-SQL, ou Standard Query Language, é uma linguagem padrão declarativa utilizada para a manipulação de bancos de dados relacionais.
-O SQL é um conhecimento fundamental para quem precisa fazer consulta, pedidos e escrever queries em bancos de dados.
+> SQL, ou Standard Query Language, é uma linguagem padrão declarativa utilizada para a manipulação de bancos de dados relacionais.
+O SQL é um conhecimento fundamental para quem precisa fazer consultas, pedidos e escrever queries em bancos de dados.
 
-## Para que serve esse post?
+## Para que serve esse documento?
 
-Serve para ajudar você que ainda aprendeu os comandos SQL ou não sabe alguma funcionalidade do mesmo.
+> Serve para ajudar você que ainda aprendeu os comandos SQL ou não sabe alguma funcionalidade do mesmo.
 
 
 ## Comando comuns
