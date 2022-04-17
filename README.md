@@ -197,6 +197,6 @@
 
 [GitHub Adriellison](https://github.com/adriellison)
 
-[Repositorio do Documento de SQL](https://github.com/adriellison/Repositorio-de-SQL)
+[Repositório do Documento de SQL](https://github.com/adriellison/Repositorio-de-SQL)
 
 [Convite para o servidor de estudos LAG](https://discord.gg/Z4RcfxtPYE)
